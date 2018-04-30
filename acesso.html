@@ -1,0 +1,72 @@
+<html lang="pt-br">
+<meta charset="utf-8" >
+<head>
+<title>Login-MedCenter</title>    
+    
+<style>
+    #tex{
+        margin-top:100px;
+        text-align:center;
+        padding:10;
+        
+    }
+
+    #bars{
+        text-align:center;
+        border:solid;
+        border-radius:0.25rem;border-color:#5a5c5c;border-width:2px;
+        width:250px;
+        height:300px;
+        position:absolute;
+        margin-top:10%;
+        margin-left:40%;
+        margin-bottom:50%;
+    }
+    
+    h1,h3{
+        text-align:center;
+        top: 50px;
+    }
+    #login,#password{
+        border:0;
+        background:#5a5c5c;
+        margin:3px;
+        
+    }
+    #ok{
+        background-color:#5a5c5c;
+        border:none;
+    }
+    #cad,#logo,#text{
+        text-decoration:none;
+        color:#5a5c5c;
+    }
+    #cad{color:white;padding:5px;background-color:#5a5c5c;}
+    body{background-color:lightgray;}
+    #ok{
+        color:white;
+    }
+
+    ::-webkit-input-placeholder{color:#fff;text-align:center;}
+    :-moz-placeholder{color:#fff;text-align:center;}
+    ::-moz-placeholder{color:#fff;text-align:center;}
+    :-ms-input-placeholder{color:#fff;text-align:center;}
+
+</style>
+    
+</head><body>
+<div id="bars">
+    
+<h1 id="logo">MedCenter</h1>
+<h3 id="text">Acesso De Sistema MedCenter</h3>
+<form action="acesso.php" method="post">
+    
+    <tr id="list1">
+    <td><p><input type="text" placeholder="Login" id="login"></p></td>
+    <td><p><input type="password" placeholder="Senha" id="password"></p></td>
+    <td><p><a href="acesso.php"><input type="submit" name="Enviar" value="Enviar" id="ok"></a></p></td>
+    <p><a href="cadastro.html" id="cad">CADASTRAR</a></p>
+    </tr></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Login-Utravel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	body{
+		background-image:url("images/back.jpg");
+	}
+	d{
+		text-decoration:none;
+		text-decoration-color:black;
+		margin:2px;
+		padding:5.5px;
+		border-color:#d6d0c9;
+		border-radius:3px;
+		border-width:1px;
+		border-style:solid;
+		
+	}
+	#ip1{
+	border-style:solid;
+	border-width:1px;
+	border-top-right-radius:3px;
+	border-top-left-radius: 3px;
+	border-color:#d6d0c9;
+	font-size: 15px;
+	
+	}
+	#ip2{
+		border-width:1px;
+		border-style:solid;
+		border-bottom-right-radius:3px;
+		border-bottom-left-radius:3px;
+		border-color:#d6d0c9;
+		font-size: 15px;
+		
+	}
+	#acces{
+		text-decoration:none;
+		text-decoration-color:black;
+		margin:2px;
+		padding:4px;
+		border-color:#007bff;
+		border-radius:5px;
+		border-width:1px;
+		background-color:grey;
+		border-style:solid;font-size:20px;
+	}
+	#pos{
+		margin-top:10%;
+	}
+	#ip1:hover{
+		border-color:#007bff;
+		-webkit-transition:1s;
+
+	}
+	#ip2:hover{
+		border-color:#007bff;
+		-webkit-transition:1s;
+
+	}
+	#acces:hover{
+		border-color:black;
+		background-color:#007bff;
+		-webkit-transition:1s;
+	}
+	
+	::-webkit-input-placeholder{color:;text-align:left;}
+    :-moz-placeholder{color:;text-align:center;}
+    ::-moz-placeholder{color:#fff;text-align:center;}
+    :-ms-input-placeholder{color:#fff;text-align:center;}
+
+</style>
+<body>
+	<div id="pos" class="text-center">
+		<p><img src="images/logo.png" style="width:100px;height:100px;"></p>
+	
+	<form action="logB.php" method="POST">
+		<p><input id="ip1" size="25" type="text" placeholder="Login" maxlength="30" name="log"><br/>
+		<input id="ip2" size="25" type="password" placeholder="Senha" maxlength="8" name="key"></p>
+		
+		<p><input id="acces" type="submit" name="env" value="Login"></p>
+		<p><a id="d" href="cadastro.html">Cadastrar</a></p>
+	</form></div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Cadastro-Utravel</title>
+	<style type="text/css">
+		#formdiv{
+			border-radius:3px;
+			border-color:silver;
+			border-style:solid;
+			background-color:white;
+			border-width:1px;
+			height:100%;
+			width:80%;
+			margin-left:10%;
+			position:absolute;
+			
+		}
+		
+		body{
+			font-family:helvetica;
+			background-color:silver;
+			
+		}
+		p{
+			text-decoration-color:white;
+			font-family:helvetica;
+			
+		}
+		input{
+			border-style:solid;
+			border-width:2px;
+			border-color:silver;
+			border-radius:3px;
+			background-color:white;
+			
+		}
+		#logo{
+			font-family:helvetica;
+			position:inherit;
+			text-align:center;
+			left:50%;
+			
+		}
+		#space{
+			top:30%;
+			left:50%;
+			position:inherit;
+			margin-left:4%;
+		}
+		#foto{display: none;
+		}
+		#sel{
+			padding:3px;border-style:solid;border-width:2px;border-color:silver;
+			border-radius:3px;
+			font-family:helvetica;
+		}
+		#sel:hover{
+			border-color:#007bff;
+			-webkit-transition:1s;
+		}
+		#ok:hover{
+			border-color:#007bff;
+			-webkit-transition:1s;
+		}
+		#ok{margin-left:6%;}
+		input:hover{
+			border-color:#007bff;
+			-webkit-transition:1s;
+		}
+
+	::-webkit-input-placeholder{color:black;text-align:center;}
+    :-moz-placeholder{color:#fff;text-align:center;}
+    ::-moz-placeholder{color:#fff;text-align:center;}
+    :-ms-input-placeholder{color:#fff;text-align:center;}
+	</style>
+</head>
+<body>
+	<div id="top"><img src="images/roma.jpg" style="width:100%;height:30%;background-attachment:fixed;background-position:center;">
+		<p style="font-size:30px;top:20%;left:50%;position:absolute;">Quer ir? A gente leva! :)</p></div>
+	<div id="formdiv" class="container"><p id="control">
+		<form action="cadastrov.php" method="POST">
+			<div id="space">
+				<p><img src="images\log1.png"></p>
+				<p hidden><input type="text" name="counter" value="1"></p>		
+			<p>Nome Completo: <input type="text" size="60" placeholder="" maxlength="50" name="nome">
+			<p>Nascimento: <input type="text" name="dia_nasc"
+				placeholder="Dia" size="1" maxlength="2">
+				<input type="text" name="mes_nasc"
+				placeholder="Mês" size="1" maxlength="2">
+				<input type="text" name="ano_nasc"
+				placeholder="Ano" size="1" maxlength="4"></p>
+				<p>RG:&emsp;&ensp;<input type="text" name="rg" maxlength="7" placeholder=""></p>
+					<p>CPF:&ensp;&ensp;<input type="text" name="cpf" maxlength="11"></p>
+						<p>Login:&ensp;<input type="text" name="log" placeholder="" maxlength="20"></p>
+							<p>Senha:<input type="password" maxlength="8" placeholder="" name="key"></p>
+			<div><hr id="l1" style="border-color:#007bff;position:;right:50; size:50%;text-align:center;"/></div>
+				<p style="font-size:20px;left:20%;font-family:helvetica;">Endereço:</p>
+			<p>Rua:&nbsp;<input type="text" name="Rua" placeholder=""> Nº:<input type="text" name="num" placeholder="" maxlength="5" size="3"> </p>
+			<p>CEP:<input type="text" id="cep" name="cep" placeholder="" maxlength="8"></p>
+				<p>Imagem:<label id="sel" for="foto">Inserir</label></p>
+			<input id="foto" type="file" name="foto">
+			<p><input id="ok" type="submit" name="ok" value="OK"></p></div>
+		</div></form></div>
+
+</body>
+</html>
